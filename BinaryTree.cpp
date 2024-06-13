@@ -116,4 +116,6 @@ class BinaryTree
 
 int main()
 {
+    BinaryTree x;
+    
 }
