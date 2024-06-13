@@ -113,3 +113,7 @@ class BinaryTree
             }
         }
 };
+
+int main()
+{
+}
