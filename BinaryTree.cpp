@@ -117,5 +117,54 @@ class BinaryTree
 int main()
 {
     BinaryTree x;
-    
+    while (true)
+    {
+        cout << "\nMenu" << endl;
+        cout << "1. implementasi insert operation"<< endl;
+        cout << "2. perform inorder operation"<< endl;
+        cout << "3. perform preorder operation"<< endl;
+        cout << "4. perform postorder operation"<< endl;
+        cout << "5. exit"<< endl;
+        cout << "\nEnter your choce (1-5):";
+        char ch;
+        cin>> ch;
+        cout << endl;
+
+        switch(ch)
+        {
+        case '1':
+        {
+            cout << "enter a word:";
+            string word;
+            cin >> word;
+            x.insert (word);
+            break;
+        }
+        case'2':
+        {
+            x. inorder(x.ROOT);
+            break;
+        }
+        case'3':
+        {
+            x.preorder(x.ROOT);
+            break;
+        }
+        case'4':
+        {
+            x.postorder(x.ROOT);
+            break;
+        }
+        case '5':
+        {
+            return 0;
+        }
+        default:
+        {
+            cout << "invalid option" << endl;
+            break;
+        }
+        
+        }
+    }
 }
